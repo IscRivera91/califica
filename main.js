@@ -95,7 +95,7 @@ function calcula_porcentaje_examen(){
 
 function calcula_calificacion_final() {
     calificacion_final = porcentaje_evidencias + porcentaje_examen;
-    calificacion_final = Math.round(calificacion_final / 10);
+    calificacion_final = calificacion_final / 10;
     div_calificacion_final.innerHTML = calificacion_final;
 }
 
@@ -106,3 +106,4 @@ function calcula_todo() {
     calcula_porcentaje_examen();
     calcula_calificacion_final();
 }
+
